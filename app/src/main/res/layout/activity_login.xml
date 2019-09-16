@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/royal_blue"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_action_back"
+        app:title="Sign In"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/sign_in"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <EditText
+    android:id="@+id/username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/signup_text"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:backgroundTint="@color/white"
+    android:drawableStart="@drawable/ic_action_user"
+    android:drawableLeft="@drawable/ic_action_user"
+    android:drawablePadding="8dp"
+    android:hint="Enter your Email or Username"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/password_one"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/white"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/register_background"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/sign_in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white" />
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/new_here_click_to_register"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>
